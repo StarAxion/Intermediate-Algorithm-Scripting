@@ -29,11 +29,11 @@ function diffArray(arr1, arr2) {
 }
 
 
-console.log(Array.isArray(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]))); // diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]) should return an array
-console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5])); // [1, 2, 3, 5], [1, 2, 3, 4, 5] should return [4]
-console.log(diffArray(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"])); // ["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"] should return ["pink wool"]
-console.log(diffArray(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"])); // ["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"] should return ["diorite", "pink wool"]
-console.log(diffArray(["andesite", "grass", "dirt", "dead shrub"], ["andesite", "grass", "dirt", "dead shrub"])); // ["andesite", "grass", "dirt", "dead shrub"], ["andesite", "grass", "dirt", "dead shrub"] should return []
-console.log(diffArray([], ["snuffleupagus", "cookie monster", "elmo"])); // [], ["snuffleupagus", "cookie monster", "elmo"] should return ["snuffleupagus", "cookie monster", "elmo"]
-console.log(diffArray([1, "calf", 3, "piglet"], [1, "calf", 3, 4])); // [1, "calf", 3, "piglet"], [1, "calf", 3, 4] should return ["piglet", 4]
-console.log(diffArray([1, "calf", 3, "piglet"], [7, "filly"])); // [1, "calf", 3, "piglet"], [7, "filly"] should return [1, "calf", 3, "piglet", 7, "filly"]
+console.log(Array.isArray(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5]))); // should return an array
+console.log(diffArray([1, 2, 3, 5], [1, 2, 3, 4, 5])); // should return [4]
+console.log(diffArray(["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"])); // should return ["pink wool"]
+console.log(diffArray(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"])); // should return ["diorite", "pink wool"]
+console.log(diffArray(["andesite", "grass", "dirt", "dead shrub"], ["andesite", "grass", "dirt", "dead shrub"])); // should return []
+console.log(diffArray([], ["snuffleupagus", "cookie monster", "elmo"])); // should return ["snuffleupagus", "cookie monster", "elmo"]
+console.log(diffArray([1, "calf", 3, "piglet"], [1, "calf", 3, 4])); // should return ["piglet", 4]
+console.log(diffArray([1, "calf", 3, "piglet"], [7, "filly"])); // should return [1, "calf", 3, "piglet", 7, "filly"]

@@ -27,8 +27,8 @@ function sumAll(arr) {
 }
 
 
-console.log(typeof sumAll([1, 4])); // sumAll([1, 4]) should return a number
-console.log(sumAll([1, 4])); // sumAll([1, 4]) should return 10
-console.log(sumAll([4, 1])); // sumAll([4, 1]) should return 10
-console.log(sumAll([5, 10])); // sumAll([5, 10]) should return 45
-console.log(sumAll([10, 5])); // sumAll([10, 5]) should return 45
+console.log(typeof sumAll([1, 4])); // should return a number
+console.log(sumAll([1, 4])); // should return 10
+console.log(sumAll([4, 1])); // should return 10
+console.log(sumAll([5, 10])); // should return 45
+console.log(sumAll([10, 5])); // should return 45
